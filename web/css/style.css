@@ -1,0 +1,102 @@
+/* style.css */
+
+/* Remove any HTML tags like <link> from here */
+/* General Body and HTML structure */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A slightly modern font */
+    background-color: #f4f7f6; /* Light gray-green background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #333; /* Default text color */
+}
+
+/* Container for the whole form */
+.container {
+    background-color: #ffffff; /* White background for the form area */
+    padding: 40px;
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 500px; /* Max width for readability */
+    margin-top: 50px; /* Space from the top */
+}
+
+/* Heading style */
+h1 {
+    color: #007bff; /* A nice blue for the heading */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+/* Form group layout */
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+/* Labels for form fields */
+label {
+    display: block; /* Each label on its own line */
+    margin-bottom: 8px;
+    font-weight: 600; /* Bold labels */
+    color: #555;
+}
+
+/* Input fields and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 15px; /* Comfortable padding */
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 8px; /* Rounded input fields */
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box; /* Ensures padding doesn't increase width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+/* Submit button */
+button[type="submit"] {
+    display: block; /* Make button full width */
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #28a745; /* Green for submit button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 30px; /* Space above the button */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button[type="submit"]:active {
+    background-color: #1e7e34; /* Even darker on active */
+    transform: translateY(0);
+}
